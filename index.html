@@ -1,81 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Celeste Cuba — Portafolio</title>
+  <meta charset="UTF-8" />
+  <title>Celeste Cuba — Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
 
-<body class="bg-gradient-to-br from-indigo-900 to-purple-900 min-h-screen text-white">
+<body class="bg-gradient-to-br from-black via-indigo-900 to-purple-900 text-white scroll-smooth">
 
-<div class="max-w-6xl mx-auto p-10">
+<!-- NAVBAR -->
+<nav class="fixed w-full top-0 z-50 bg-black/60 backdrop-blur border-b border-purple-700">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-xl text-purple-400">Celeste</h1>
+    <div class="space-x-6 text-purple-300">
+      <a href="#home" class="hover:text-white">Inicio</a>
+      <a href="#about" class="hover:text-white">Sobre mí</a>
+      <a href="#projects" class="hover:text-white">Proyectos</a>
+      <a href="#skills" class="hover:text-white">Habilidades</a>
+      <a href="#contact" class="hover:text-white">Contacto</a>
+    </div>
+  </div>
+</nav>
 
-  <div class="mb-14">
-    <h1 class="text-5xl font-bold">👩‍💻 Celeste Cuba</h1>
-    <p class="text-purple-300 mt-3 text-xl">
-      Desarrolladora Full Stack · APIs · Dashboards · Sistemas Empresariales
+<!-- HERO -->
+<section id="home" class="min-h-screen flex items-center justify-center text-center">
+  <div data-aos="fade-up">
+    <h1 class="text-6xl font-extrabold text-purple-400">Celeste Cuba</h1>
+    <p class="text-xl mt-4 text-purple-200">
+      Full Stack Developer · APIs · Dashboards · Sistemas Empresariales
     </p>
+    <a href="#projects" class="mt-8 inline-block px-8 py-3 bg-purple-600 rounded-xl hover:bg-purple-700 transition">
+      Ver Proyectos
+    </a>
   </div>
+</section>
 
-  <h2 class="text-3xl font-bold mb-8">🚀 Proyectos Destacados</h2>
+<!-- ABOUT -->
+<section id="about" class="py-32 max-w-6xl mx-auto px-6" data-aos="fade-right">
+  <h2 class="text-4xl font-bold mb-6 text-purple-400">Sobre mí</h2>
+  <p class="text-purple-200 leading-relaxed">
+    Soy estudiante de Ingeniería de Sistemas y desarrolladora Full Stack especializada en construir
+    sistemas reales, APIs profesionales, dashboards y plataformas empresariales.
+    Me enfoco en backend, bases de datos, arquitectura y diseño visual moderno.
+  </p>
+</section>
 
-  <div class="grid md:grid-cols-3 gap-8">
+<!-- PROJECTS -->
+<section id="projects" class="py-32 bg-black/40">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold mb-10 text-purple-400">Proyectos</h2>
 
-    <!-- Taller -->
-    <div class="bg-white/10 p-6 rounded-xl hover:scale-105 transition">
-      <h3 class="text-xl font-bold">🔧 Sistema de Taller</h3>
-      <p class="text-purple-200 mt-2">
-        Gestión de órdenes, clientes, técnicos, estados, reportes y PDFs.
-      </p>
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- FeedbackLive -->
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 transition" data-aos="zoom-in">
+        <h3 class="text-xl font-bold">📣 FeedbackLive</h3>
+        <p class="text-purple-200 mt-2">
+          Sistema de encuestas en tiempo real con QR, dashboard, gráficos, modo oscuro y actualización en vivo.
+        </p>
+        <a class="text-purple-400 mt-3 inline-block" href="https://github.com/CeleCH/feedbacklive" target="_blank">GitHub →</a>
+      </div>
+
+      <!-- API Ecommerce -->
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 transition" data-aos="zoom-in">
+        <h3 class="text-xl font-bold">🛒 API eCommerce</h3>
+        <p class="text-purple-200 mt-2">
+          API REST con JWT, usuarios, productos, carrito, órdenes y control de stock.
+        </p>
+        <a class="text-purple-400 mt-3 inline-block" href="https://github.com/CeleCH/ecommerce-api" target="_blank">GitHub →</a>
+      </div>
+
+      <!-- Taller -->
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 transition" data-aos="zoom-in">
+        <h3 class="text-xl font-bold">🔧 Sistema de Taller</h3>
+        <p class="text-purple-200 mt-2">
+          Gestión de órdenes de reparación, clientes, técnicos, estados y reportes PDF.
+        </p>
+      </div>
+
+      <!-- Botica -->
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 transition" data-aos="zoom-in">
+        <h3 class="text-xl font-bold">💊 Sistema de Botica</h3>
+        <p class="text-purple-200 mt-2">
+          Ventas, inventario, clientes, productos y facturación.
+        </p>
+      </div>
+
+      <!-- Sanguchón -->
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 transition" data-aos="zoom-in">
+        <h3 class="text-xl font-bold">🥪 El Sanguchón (SOA)</h3>
+        <p class="text-purple-200 mt-2">
+          Sistema de pedidos online con arquitectura orientada a servicios.
+        </p>
+      </div>
+
     </div>
-
-    <!-- Botica -->
-    <div class="bg-white/10 p-6 rounded-xl hover:scale-105 transition">
-      <h3 class="text-xl font-bold">💊 Sistema de Botica</h3>
-      <p class="text-purple-200 mt-2">
-        Ventas, clientes, productos, stock y facturación.
-      </p>
-    </div>
-
-    <!-- Sanguchón -->
-    <div class="bg-white/10 p-6 rounded-xl hover:scale-105 transition">
-      <h3 class="text-xl font-bold">🥪 El Sanguchón (SOA)</h3>
-      <p class="text-purple-200 mt-2">
-        Sistema de pedidos online con arquitectura orientada a servicios.
-      </p>
-    </div>
-
-    <!-- FeedbackLive -->
-    <div class="bg-white/10 p-6 rounded-xl hover:scale-105 transition">
-      <h3 class="text-xl font-bold">📣 FeedbackLive</h3>
-      <p class="text-purple-200 mt-2">
-        Sistema de encuestas en tiempo real con QR, gráficos, dashboard y modo oscuro.
-      </p>
-      <a class="text-blue-400 mt-3 inline-block" href="https://github.com/CeleCH/feedbacklive" target="_blank">
-        Ver proyecto →
-      </a>
-    </div>
-
-    <!-- API Ecommerce -->
-    <div class="bg-white/10 p-6 rounded-xl hover:scale-105 transition">
-      <h3 class="text-xl font-bold">🛒 API eCommerce</h3>
-      <p class="text-purple-200 mt-2">
-        API REST con JWT, usuarios, productos, carrito, órdenes y control de stock.
-      </p>
-      <a class="text-blue-400 mt-3 inline-block" href="https://github.com/CeleCH/ecommerce-api" target="_blank">
-        Ver proyecto →
-      </a>
-    </div>
-
   </div>
+</section>
 
-  <div class="mt-20 text-purple-300 text-center">
-    © 2026 — Celeste Cuba · GitHub: 
-    <a class="text-blue-400" href="https://github.com/CeleCH">CeleCH</a>
+
+<!-- SKILLS -->
+<section id="skills" class="py-32 max-w-6xl mx-auto px-6" data-aos="fade-left">
+  <h2 class="text-4xl font-bold mb-10 text-purple-400">Habilidades</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-purple-200">
+    <div class="bg-white/5 p-4 rounded">Java</div>
+    <div class="bg-white/5 p-4 rounded">Spring Boot</div>
+    <div class="bg-white/5 p-4 rounded">MySQL</div>
+    <div class="bg-white/5 p-4 rounded">REST API</div>
+    <div class="bg-white/5 p-4 rounded">JWT</div>
+    <div class="bg-white/5 p-4 rounded">Tailwind</div>
+    <div class="bg-white/5 p-4 rounded">Chart.js</div>
+    <div class="bg-white/5 p-4 rounded">Git & GitHub</div>
   </div>
+</section>
 
-</div>
+<!-- CONTACT -->
+<section id="contact" class="py-32 text-center bg-black/40" data-aos="fade-up">
+  <h2 class="text-4xl font-bold text-purple-400">Contacto</h2>
+  <p class="text-purple-200 mt-4">celestecuba14@gmail.com</p>
+  <a class="mt-6 inline-block px-8 py-3 bg-purple-600 rounded-xl hover:bg-purple-700" href="https://github.com/CeleCH">
+    GitHub
+  </a>
+</section>
+
+<script>
+  AOS.init({ duration: 1200 });
+</script>
 
 </body>
 </html>
