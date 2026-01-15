@@ -1,51 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Celeste Cuba — Full Stack Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <title>Celeste Cuba | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </head>
 
-<body class="bg-gradient-to-br from-black via-indigo-900 to-purple-900 text-white scroll-smooth">
-
-<!-- NAVBAR -->
-<nav class="fixed w-full top-0 z-50 bg-black/60 backdrop-blur border-b border-purple-700">
-  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-    <h1 class="font-bold text-xl text-purple-400">Celeste</h1>
-    <div class="space-x-6 text-purple-300">
-      <a href="#home" class="hover:text-white">Inicio</a>
-      <a href="#about" class="hover:text-white">Sobre mí</a>
-      <a href="#projects" class="hover:text-white">Proyectos</a>
-      <a href="#skills" class="hover:text-white">Habilidades</a>
-      <a href="#contact" class="hover:text-white">Contacto</a>
-    </div>
-  </div>
-</nav>
+<body class="bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] text-white">
 
 <!-- HERO -->
-<section id="home" class="min-h-screen flex items-center justify-center text-center">
-  <div data-aos="fade-up">
-    <h1 class="text-6xl font-extrabold text-purple-400">Celeste Cuba</h1>
-    <p class="text-xl mt-4 text-purple-200">
-      Full Stack Developer · APIs · Dashboards · Sistemas Empresariales
-    </p>
-    <a href="#projects" class="mt-8 inline-block px-8 py-3 bg-purple-600 rounded-xl hover:bg-purple-700 transition">
-      Ver Proyectos
+<section class="min-h-screen flex flex-col md:flex-row items-center justify-center px-10 gap-16">
+
+  <div class="text-center md:text-left">
+    <h1 class="text-6xl font-extrabold mb-4">
+      Celeste <span class="text-purple-400">Cuba</span>
+    </h1>
+    <p class="text-xl text-purple-300 mb-6">
+  <span id="typed"></span>
+</p>
+
+
+    <a href="#projects" class="bg-purple-600 px-8 py-3 rounded-full text-lg hover:bg-purple-700 transition shadow-xl">
+      Ver proyectos 🚀
     </a>
   </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about" class="py-32 max-w-6xl mx-auto px-6" data-aos="fade-right">
-  <h2 class="text-4xl font-bold mb-6 text-purple-400">Sobre mí</h2>
-  <p class="text-purple-200 leading-relaxed">
-    Soy estudiante de Ingeniería de Sistemas y desarrolladora Full Stack especializada en construir
-    sistemas reales, APIs profesionales, dashboards y plataformas empresariales.
-    Me enfoco en backend, bases de datos, arquitectura y diseño visual moderno.
-  </p>
+ <div class="relative group">
+  <div class="absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur opacity-70 group-hover:opacity-100 transition"></div>
+  <img src="img/celeste.jpg"
+       class="relative w-72 h-72 object-cover rounded-full border-4 border-purple-500 shadow-2xl transform group-hover:rotate-3 group-hover:scale-110 transition duration-500">
+</div>
+
+
 </section>
 
 <!-- PROJECTS -->
@@ -56,7 +45,7 @@
     <div class="grid md:grid-cols-3 gap-8">
 
       <!-- FeedbackLive -->
-      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 transition" data-aos="zoom-in">
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] transition duration-500" data-aos="zoom-in">
         <h3 class="text-xl font-bold">📣 FeedbackLive</h3>
         <p class="text-purple-200 mt-2">
           Sistema de encuestas en tiempo real con QR, dashboard, gráficos, modo oscuro y actualización en vivo.
@@ -65,7 +54,7 @@
       </div>
 
       <!-- API Ecommerce -->
-      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 transition" data-aos="zoom-in">
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] transition duration-500" data-aos="zoom-in">
         <h3 class="text-xl font-bold">🛒 API eCommerce</h3>
         <p class="text-purple-200 mt-2">
           API REST con JWT, usuarios, productos, carrito, órdenes y control de stock.
@@ -74,60 +63,65 @@
       </div>
 
       <!-- Taller -->
-      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 transition" data-aos="zoom-in">
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] transition duration-500" data-aos="zoom-in">
         <h3 class="text-xl font-bold">🔧 Sistema de Taller</h3>
         <p class="text-purple-200 mt-2">
           Gestión de órdenes de reparación, clientes, técnicos, estados y reportes PDF.
         </p>
+         <a class="text-purple-400 mt-3 inline-block" href="https://github.com/CeleCH/Taller-de-reparaciones-" target="_blank">GitHub →</a>
       </div>
 
       <!-- Botica -->
-      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 transition" data-aos="zoom-in">
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] transition duration-500" data-aos="zoom-in">
         <h3 class="text-xl font-bold">💊 Sistema de Botica</h3>
         <p class="text-purple-200 mt-2">
           Ventas, inventario, clientes, productos y facturación.
         </p>
+        <a class="text-purple-400 mt-3 inline-block" href="https://github.com/CeleCH/Proyecto-Sistema-Ventas-Lianfarma" target="_blank">GitHub →</a>
       </div>
 
       <!-- Sanguchón -->
-      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 transition" data-aos="zoom-in">
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] transition duration-500" data-aos="zoom-in">
         <h3 class="text-xl font-bold">🥪 El Sanguchón (SOA)</h3>
         <p class="text-purple-200 mt-2">
           Sistema de pedidos online con arquitectura orientada a servicios.
         </p>
+        <a class="text-purple-400 mt-3 inline-block" href="https://github.com/CeleCH/EL-SANGUCHON-SOA" target="_blank">GitHub →</a>
       </div>
+
 
     </div>
   </div>
 </section>
 
 
-<!-- SKILLS -->
-<section id="skills" class="py-32 max-w-6xl mx-auto px-6" data-aos="fade-left">
-  <h2 class="text-4xl font-bold mb-10 text-purple-400">Habilidades</h2>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-purple-200">
-    <div class="bg-white/5 p-4 rounded">Java</div>
-    <div class="bg-white/5 p-4 rounded">Spring Boot</div>
-    <div class="bg-white/5 p-4 rounded">MySQL</div>
-    <div class="bg-white/5 p-4 rounded">REST API</div>
-    <div class="bg-white/5 p-4 rounded">JWT</div>
-    <div class="bg-white/5 p-4 rounded">Tailwind</div>
-    <div class="bg-white/5 p-4 rounded">Chart.js</div>
-    <div class="bg-white/5 p-4 rounded">Git & GitHub</div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="py-32 text-center bg-black/40" data-aos="fade-up">
-  <h2 class="text-4xl font-bold text-purple-400">Contacto</h2>
-  <p class="text-purple-200 mt-4">celestecuba14@gmail.com</p>
-  <a class="mt-6 inline-block px-8 py-3 bg-purple-600 rounded-xl hover:bg-purple-700" href="https://github.com/CeleCH">
-    GitHub
-  </a>
-</section>
+<!-- FOOTER -->
+<footer class="text-center py-10 text-purple-400">
+  © 2026 · Celeste Cuba · <a href="https://github.com/CeleCH" class="hover:underline">GitHub</a>
+</footer>
 
 <script>
-  AOS.init({ duration: 1200 });
+  ScrollReveal().reveal('section', {
+    distance: '50px',
+    duration: 1000,
+    origin: 'bottom',
+    interval: 200
+  });
+</script>
+
+
+<script>
+  new Typed('#typed', {
+    strings: [
+      "Full Stack Developer",
+      "Arquitecta de APIs",
+      "Creadora de Dashboards",
+      "Ingeniera de Sistemas"
+    ],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+  });
 </script>
 
 </body>
