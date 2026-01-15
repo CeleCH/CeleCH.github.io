@@ -88,50 +88,108 @@
 
     <div class="grid md:grid-cols-3 gap-8">
 
-      <!-- FeedbackLive -->
-      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] transition duration-500" data-aos="zoom-in">
-        <h3 class="text-xl font-bold">📣 FeedbackLive</h3>
-        <p class="text-purple-200 mt-2">
-          Sistema de encuestas en tiempo real con QR, dashboard, gráficos, modo oscuro y actualización en vivo.
+<!-- 📣 FeedbackLive -->
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:shadow-[0_0_40px_rgba(168,85,247,0.7)] transition">
+        <h3 class="text-xl font-bold mb-2">📣 FeedbackLive</h3>
+
+        <img id="fb-main" src="img/feedbacklive/paneladmin.png" class="rounded-lg border w-full h-48 object-cover">
+
+        <div class="flex gap-2 mt-3">
+          <img src="img/feedbacklive/survey.png" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('fb-main').src=this.src">
+          <img src="img/feedbacklive/darkmode.png" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('fb-main').src=this.src">
+          <img src="img/feedbacklive/QRfuncional.png" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('fb-main').src=this.src">
+          <img src="img/feedbacklive/reportPDF.png" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('fb-main').src=this.src">
+        </div>
+
+        <p class="text-purple-200 mt-3">
+          Sistema SaaS de encuestas en tiempo real con QR, dashboard, gráficos automáticos, modo oscuro y reportes ejecutivos.
         </p>
-        <a class="text-purple-400 mt-3 inline-block" href="https://github.com/CeleCH/feedbacklive" target="_blank">GitHub →</a>
+
+        <a href="https://github.com/CeleCH/feedbacklive" class="text-purple-400 mt-3 inline-block">GitHub →</a>
       </div>
 
-      <!-- API Ecommerce -->
-      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] transition duration-500" data-aos="zoom-in">
-        <h3 class="text-xl font-bold">🛒 API eCommerce</h3>
-        <p class="text-purple-200 mt-2">
-          API REST con JWT, usuarios, productos, carrito, órdenes y control de stock.
+
+      <!-- 🛒 API eCommerce -->
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:shadow-[0_0_40px_rgba(168,85,247,0.7)] transition">
+        <h3 class="text-xl font-bold mb-2">🛒 API eCommerce</h3>
+
+        <img id="ec-main" src="img/ecommerce/loginJWT.png" class="rounded-lg border w-full h-48 object-cover">
+
+        <div class="flex gap-2 mt-3">
+          <img src="img/ecommerce/registro.png" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('ec-main').src=this.src">
+          <img src="img/ecommerce/checkout.png" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('ec-main').src=this.src">
+          <img src="img/ecommerce/categoria.png" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('ec-main').src=this.src">
+          <img src="img/ecommerce/carrito.png" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('ec-main').src=this.src">
+        </div>
+
+        <p class="text-purple-200 mt-3">
+          API REST profesional con autenticación JWT, usuarios, productos, carrito, órdenes, stock y seguridad por roles.
         </p>
-        <a class="text-purple-400 mt-3 inline-block" href="https://github.com/CeleCH/ecommerce-api" target="_blank">GitHub →</a>
+
+        <a href="https://github.com/CeleCH/ecommerce-api" class="text-purple-400 mt-3 inline-block">GitHub →</a>
       </div>
 
-      <!-- Taller -->
-      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] transition duration-500" data-aos="zoom-in">
-        <h3 class="text-xl font-bold">🔧 Sistema de Taller</h3>
-        <p class="text-purple-200 mt-2">
-          Gestión de órdenes de reparación, clientes, técnicos, estados y reportes PDF.
+
+      <!-- 🔧 Taller -->
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:shadow-[0_0_40px_rgba(168,85,247,0.7)] transition">
+        <h3 class="text-xl font-bold mb-2">🔧 Sistema de Taller</h3>
+
+        <img id="ta-main" src="img/taller/dashboard.png" class="rounded-lg border w-full h-48 object-cover">
+
+        <div class="flex gap-2 mt-3">
+          <img src="img/taller/clientes.png" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('ta-main').src=this.src">
+          <img src="img/taller/ordenes.png" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('ta-main').src=this.src">
+        </div>
+
+        <p class="text-purple-200 mt-3">
+          Sistema empresarial para talleres de reparación: clientes, órdenes, técnicos, estados, historial y reportes PDF.
         </p>
-         <a class="text-purple-400 mt-3 inline-block" href="https://github.com/CeleCH/Taller-de-reparaciones-" target="_blank">GitHub →</a>
+
+        <a href="https://github.com/CeleCH/Taller-de-reparaciones-" class="text-purple-400 mt-3 inline-block">GitHub →</a>
       </div>
 
-      <!-- Botica -->
-      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] transition duration-500" data-aos="zoom-in">
-        <h3 class="text-xl font-bold">💊 Sistema de Botica</h3>
-        <p class="text-purple-200 mt-2">
-          Ventas, inventario, clientes, productos y facturación.
+
+      <!-- 💊 Botica -->
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:shadow-[0_0_40px_rgba(168,85,247,0.7)] transition">
+        <h3 class="text-xl font-bold mb-2">💊 Sistema de Botica</h3>
+
+        <img id="bo-main" src="img/botica/facturacion.jpeg" class="rounded-lg border w-full h-48 object-cover">
+
+        <div class="flex gap-2 mt-3">
+          <img src="img/botica/login.jpeg" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('bo-main').src=this.src">
+          <img src="img/botica/productos.jpeg" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('bo-main').src=this.src">
+          <img src="img/botica/usuarios.jpeg" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('bo-main').src=this.src">
+          <img src="img/botica/reporte.jpeg" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('bo-main').src=this.src">
+        </div>
+
+        <p class="text-purple-200 mt-3">
+          Sistema de ventas farmacéuticas con inventario, clientes, usuarios, facturación, reportes y control de stock.
         </p>
-        <a class="text-purple-400 mt-3 inline-block" href="https://github.com/CeleCH/Proyecto-Sistema-Ventas-Lianfarma" target="_blank">GitHub →</a>
+
+        <a href="https://github.com/CeleCH/Proyecto-Sistema-Ventas-Lianfarma" class="text-purple-400 mt-3 inline-block">GitHub →</a>
       </div>
 
-      <!-- Sanguchón -->
-      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] transition duration-500" data-aos="zoom-in">
-        <h3 class="text-xl font-bold">🥪 El Sanguchón (SOA)</h3>
-        <p class="text-purple-200 mt-2">
-          Sistema de pedidos online con arquitectura orientada a servicios.
+
+      <!-- 🥪 Sanguchón -->
+      <div class="bg-white/5 p-6 rounded-xl border border-purple-700 hover:shadow-[0_0_40px_rgba(168,85,247,0.7)] transition">
+        <h3 class="text-xl font-bold mb-2">🥪 El Sanguchón (SOA)</h3>
+
+        <img id="sa-main" src="img/sanguchon/catalogo.png" class="rounded-lg border w-full h-48 object-cover">
+
+        <div class="flex gap-2 mt-3">
+          <img src="img/sanguchon/gestionProductos.png" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('sa-main').src=this.src">
+          <img src="img/sanguchon/contactWSP.png" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('sa-main').src=this.src">
+          <img src="img/sanguchon/iniciosesion.png" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('sa-main').src=this.src">
+          <img src="img/sanguchon/panelAdmin.png" class="w-16 h-12 cursor-pointer" onclick="document.getElementById('sa-main').src=this.src">
+        </div>
+
+        <p class="text-purple-200 mt-3">
+          Sistema de pedidos online desarrollado con arquitectura SOA, panel administrativo, catálogo, usuarios y pedidos.
         </p>
-        <a class="text-purple-400 mt-3 inline-block" href="https://github.com/CeleCH/EL-SANGUCHON-SOA" target="_blank">GitHub →</a>
+
+        <a href="https://github.com/CeleCH/EL-SANGUCHON-SOA" class="text-purple-400 mt-3 inline-block">GitHub →</a>
       </div>
+
 
 
     </div>
